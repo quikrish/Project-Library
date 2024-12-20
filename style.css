@@ -1,0 +1,84 @@
+body {
+  text-align: center;
+  padding: 30px;
+}
+h1 {
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input[type="text"],
+input[type="number"] {
+  margin-right: 10px;
+  border: 1px solid salmon;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th {
+  background-color: #f4f4f4;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/*button to add new book  */
+#new-book {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* add book button in form */
+#add-book {
+  font-weight: 900px;
+}
+
+#form-dialog {
+  max-width: 400px;
+  padding-top: 0;
+  border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
+  border-width: 2px;
+  border-style: solid;
+}
+.wrapper {
+  padding: 16px;
+}
+.toggleStatus {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.remove-book {
+  background-color: #ff4444;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+#year {
+  border: 1px solid salmon;
+}
