@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project-Library</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <h1>Library</h1>
@@ -14,11 +13,11 @@
       <div class="wrapper">
         <h2>Enter Book details</h2>
         <form id="bookForm">
-          <input type="text" placeholder="title" id="title" required />
-          <input type="text" placeholder="author" id="author" required />
+          <input type="text" placeholder="Title" id="title" required />
+          <input type="text" placeholder="Author" id="author" required />
           <input
             type="number"
-            placeholder="pages"
+            placeholder="Pages"
             id="pages"
             min="1"
             required
@@ -29,20 +28,8 @@
           <label for="isRead">
             <input type="checkbox" id="isRead" /> Have you read this book?
           </label>
-          <button
-            class="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-            type="submit"
-            id="add-book"
-          >
-            Add Book
-          </button>
-          <button
-            class="px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            type="button"
-            id="close"
-          >
-            Close
-          </button>
+          <button type="submit" id="add-book">Save Book</button>
+          <button type="button" id="close">Close</button>
         </form>
       </div>
     </dialog>
