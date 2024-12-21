@@ -97,7 +97,7 @@ form.addEventListener("submit", (event) => {
 function populateYearDropdown() {
   const yearSelect = document.getElementById("year");
   const currentYear = new Date().getFullYear();
-  const startYear = 1900;
+  const startYear = 1800;
 
   for (let year = currentYear; year >= startYear; year--) {
     const option = document.createElement("option");
@@ -109,3 +109,6 @@ function populateYearDropdown() {
 
 // Call the function when the page loads
 populateYearDropdown();
+addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 295, 1937, true);
+addBookToLibrary("1984", "George Orwell", 328, 1949, false);
+addBookToLibrary("Pride and Prejudice", "Jane Austen", 432, 1813, true);
